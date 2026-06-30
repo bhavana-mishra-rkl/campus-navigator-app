@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 110, 27);
+    color: rgb(255, 229, 203);
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease;
+    font-family: "Reem kufi", sans-serif !important;
+}   
+body.scrolled{
+    background-color: rgb(255, 229, 203);
+    color:rgb(235, 110, 27);
+}
+section{
+    height: 100vh;
+}
+#logoimg{
+    width: 65px;
+    height: 65px;
+    padding: 0px 10px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.website-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-out forwards;
+    
+}
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px ;
+}
+.navbar-links-desktop{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar a{
+    display: block;
+    color: rgb(255, 229, 203);
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: color 0.4s ease;
+}
+.navbar a:hover{
+    color: rgb(44, 114, 245);
+}
+.outr{
+    margin-bottom: 0;
+}
+.web-name{
+    margin-top: 0;
+}
+@media (min-width: 769px) {
+    .toggle-btn {
+        display: none; 
+    }
+    .side-dashboard {
+        display: none; 
+    }
+}
+@media (max-width: 768px) {
+    .sidebar-open .side-dashboard{
+        transform: translateX(0);
+    }
+    .sidebar-closed .side-dashboard {
+        transform: translateX(100%);
+    }
+
+    .navbar-links-desktop {
+        display: none; 
+    }
+    .navbar{
+        padding: 0 20px;
+    }
+    .toggle-btn {
+        display: block !important; 
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color:  rgb(255, 229, 203);
+        z-index: 100;
+    }
+    .side-dashboard {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 240px;
+        height: 100vh;
+        background-color: #274474;
+        z-index: 99;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+.website-description{
+  position:absolute;           
+  top: 50%;
+  left: 50%;   
+  transform: translate(-50%, -50%);
+  max-width: 600px;          
+  width: 90%;              
+  max-height: 90vh; 
+  text-align: center; 
+}
+span{
+    color: #2159b4;
+}
+.Map-pg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.dashboard-header{
+    padding: 15px 35px;
+    color:rgb(235, 110, 27) ;
+}
+.sidebar-links{
+    display: contents;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-links a{
+    display: block;
+    color: rgb(255, 229, 203);
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: color 0.4s ease;
+}
+.sidebar-links a:hover{
+    color:rgb(235, 110, 27);
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.box-heading{
+    border: 1px solid ;
+    border-radius: 30px;
+    background-color: rgb(255, 229, 203) ;
+    color: rgb(44, 114, 245);
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: smaller;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+.explore-btn{
+    background-color: #194fa7;
+    color: rgb(255, 229, 203);
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-size: large;
+    font-family: "Reem kufi", sans-serif;
+    cursor: pointer;
+}
+.explore-btn:active{
+    background-color: #1e59b9;
+}
