@@ -124,7 +124,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 .dashboard-header{
     padding: 15px 35px;
@@ -174,4 +174,16 @@ span{
 }
 .explore-btn:active{
     background-color: #1e59b9;
+}
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.theMap {
+    position: relative;
+    top: -60px;
+    border: none;
+    width: 80vw;
 }
